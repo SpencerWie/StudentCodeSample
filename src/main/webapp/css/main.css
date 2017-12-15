@@ -1,0 +1,3 @@
+#newStudentForm { display: none; }
+#newStudent { cursor: pointer; color: grey; highlight: none }
+#newStudent:hover { color: black; }
