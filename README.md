@@ -22,8 +22,25 @@ This example will be using an Eclipse IDE to walk-through loading and running th
 
 **4.** If needed resolve the name template, and then check the `pom.xml` file. Click *Finnish*.
 
-<img src="imgs/ImportMain_pom.PNG">
+<img src="imgs/ImportMaven_pom.PNG">
 
-**5.** Once the project loads into the Editor simply run the Application. Then open a web broswer and input the URL `http://localhost:8080/` (*Or the port initiated by Tomcat*). That's it, the application should be fully working:
+**5.** Once the project loads into the Editor simply run the Application. Then open a web broswer and input the URL `http://localhost:8080/` (*Or the port initiated by Tomcat*). 
 
 <img src="imgs/AppRun.PNG">
+
+<h2>SQL Server DataBase Configuration</h2>
+
+By this application will automiacally create and H2 Database when executed, that way no Database setup is needed. Setting up a Database with SQL Server is simple, uncomment the pre-defined items in the `application.properties`. These settings are the ones by the developer for their SQL Server Database:
+
+>spring.jpa.hibernate.ddl-auto = *create-drop* 
+>spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+>spring.datasource.url=jdbc:sqlserver://localhost;DatabaseName=**student_db**;integratedSecurity=false;
+>spring.datasource.username=**sa**  
+>spring.datasource.password=**password**  
+
+In the settings above replace `student_db` with the name of your database, then change the username `sa` and password `password` to a user which has access do that database. The option `create-drop` can also be changed if needed.
+
+Below is an example of the application and Database with the settings above:
+
+<img src="imgs/SQLServer.PNG">
+ 
