@@ -58,14 +58,19 @@ The new student will appear at the bottom of the list automatically, and the for
 
 <h4>Editing a Student</h4>
 
-Clicking the button with a pencil icon in any row will toggle that row to be editable, and the buttons change to a confirm edit and cancel edit and repectively have tooltips *"Confirm Edit"* and *"Cancel Edit"*. If we give a blank value for *Name* and change Grade to *B+*, if we click on *Confirm Edit* a red border is shown on the blank field indicating the valid is invalid:
+Clicking the button with a pencil icon in any row will toggle that row to be editable. The buttons change to confirm edit and cancel edit buttons and repectively have tooltips *"Confirm Edit"* and *"Cancel Edit"*. 
 
-<img src="/imgs/CRUD_Create_3.PNG" />
+<img src="/imgs/CRUD_Edit_1.PNG" />
+<img src="/imgs/CRUD_Edit_2.PNG" />
+
+If we give a blank value for *Name* and change Grade to *B+* then click on *Confirm Edit* a red border is shown on the blank field indicating the valid is invalid:
+
+<img src="/imgs/CRUD_Edit_3.PNG" />
 
 Then clicking on *Cancel Edit* changes that row back to it's default view, and no changes are made. If we click on *Edit* on the row for "John Smith" and change the values to "Bob Smith", "40", and "C+" respectively and click *Confirm Edit* the view updates to those new values:
 
-<img src="imgs/CRUD_Create_4.PNG" />
-<img src="imgs/CRUD_Create_5.PNG" />
+<img src="imgs/CRUD_Edit_4.PNG" />
+<img src="imgs/CRUD_Edit_5.PNG" />
 
 
 
