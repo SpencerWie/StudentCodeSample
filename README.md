@@ -72,6 +72,14 @@ Then clicking on *Cancel Edit* changes that row back to it's default view, and n
 <img src="imgs/CRUD_Edit_4.PNG" />
 <img src="imgs/CRUD_Edit_5.PNG" />
 
+ <h4>Deleting a Student</h4>
+ 
+ To delete a student click on the red button with an "X" symbol on the very right of the row. This will delete that record and refresh the table after a confirmation dialog:
+ 
+<img src="/imgs/CRUD_Delete_1.PNG" />
+<img src="/imgs/CRUD_Delete_2.PNG" />
+<img src="/imgs/CRUD_Delete_3.PNG" />
+
 
 
 
