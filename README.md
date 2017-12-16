@@ -1,8 +1,15 @@
-# StudentCodeSample
+# Student Code Sample
 
 This is a Sample Code Project to demonstrate a basic CRUD application with JavaScript [React](https://reactjs.org/) on the front-end and Java ([Spring](https://spring.io/)) on the back-end. This application was made to be cloned and easily executed without having to setup any additional dependencies (*ex: Node.JS*).
 
-<h2>Setup and Running the Application</h2>
+The following sections are covered in this README:
+
+1. Setup and Running the Application
+2. SQL Server DataBase Configuration
+3. Running Unit Test
+4. Application - Students CRUD
+
+<h2>1. Setup and Running the Application</h2>
 
 This example will be using an Eclipse IDE to walk-through loading and running this project, any other IDE with Maven support will also work.
 
@@ -28,7 +35,7 @@ This example will be using an Eclipse IDE to walk-through loading and running th
 
 <img src="imgs/AppRun.PNG">
 
-<h2>SQL Server DataBase Configuration</h2>
+<h2>2. SQL Server DataBase Configuration</h2>
 
 This application will automiacally create and H2 Database when executed, that way no inital Database setup is needed. Setting up a Database with SQL Server is simple, uncomment the pre-defined items in the `application.properties`. These settings are the ones by the developer for their SQL Server Database:
 
@@ -43,14 +50,20 @@ In the settings above replace `student_db` with the name of your database, then 
 Below is an example of the application and Database with the settings above:
 
 <img src="imgs/SQLServer.PNG" />
+
+<h3>3. Running Unit Test</h3>
+
+To run unit test using JUnit go to the file *src/main/UnitTest.java*, when opened the green execute button should contain the tooltip *Run UnitTest*. Now click run and Ecplise will run the unit test and give back passing results:
+
+<img src="imgs/UnitTest.PNG" />
  
- <h2>Students CRUD</h2>
- 
- <h4>Creating a New Student</h4>
- 
- Click the item below the table called *"+ Create new student"*, then fillout the form information and click *"Create"*:
- 
- <img src="/imgs/CRUD_Create_1.PNG" />
+<h2>4. Application -Students CRUD</h2>
+
+<h4>Creating a New Student</h4>
+
+Click the item below the table called *"+ Create new student"*, then fillout the form information and click *"Create"*:
+
+<img src="/imgs/CRUD_Create_1.PNG" />
 
 The new student will appear at the bottom of the list automatically, and the form will be set back to it's default values. There are basic HTML5 validations to prevent blank fields.
 
