@@ -49,6 +49,7 @@ window.Student = React.createClass({
   // Modifies the element in the Database by calling REST - PUT
   handleUpdate() {
   
+    // Get fields from form and validate
     var curStudent = {};
     
     var nameNode = ReactDOM.findDOMNode(this.refs.newName);
@@ -77,6 +78,7 @@ window.Student = React.createClass({
         return false;
     }     
     
+    // Call out to Server for update
     var self = this;
     $.ajax({
         // PUT --> /api/students/{id} (note: PUT is used because this should be idempotent)
@@ -120,6 +122,7 @@ window.Student = React.createClass({
     );
     if (this.state.update == true)
     {
+       // Generate grade drop-down list, adds selected attribute to the value of the current grade 
        var gradeList = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"]; 
        var gradeHTML = [];
         
