@@ -51,7 +51,7 @@ Below is an example of the application and Database with the settings above:
 
 <img src="imgs/SQLServer.PNG" />
 
-<h3>3. Running Unit Test</h3>
+<h2>3. Running Unit Test</h2>
 
 To run unit test using JUnit go to the file *src/main/UnitTest.java*, when opened the green execute button should contain the tooltip *Run UnitTest*. Now click run and Ecplise will run the unit test and give back passing results:
 
