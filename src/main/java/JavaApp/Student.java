@@ -7,8 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Student {
-
+public class Student 
+{
 	private @Id @GeneratedValue Long id;
 	private String name;
 	private String grade;
@@ -17,28 +17,35 @@ public class Student {
 	@SuppressWarnings("unused")
 	private Student() {}
 
-	public Student(String name, String grade, int age) {
+	public Student(String name, String grade, int age) 
+	{
 		this.setName(name);
 		this.setGrade(grade);
 		this.setAge(age);
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) 
+	{
+		// A name cannot be empty in order to get set.
 		if(name != null && !name.isEmpty())
 			this.name = name;
 		else
 			System.out.println("Name was not set, it cannot be null or empty");
 	}
 
-	public int getAge() {
+	public int getAge() 
+	{
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(int age) 
+	{
+		// An age must be a positive number, otherwise default to 0.
 		if(age >= 0) 
 		{
 			this.age = age;
@@ -50,11 +57,14 @@ public class Student {
 		}
 	}
 	
-	public String getGrade() {
+	public String getGrade() 
+	{
 		return grade;
 	}
 
-	public void setGrade(String grade) {
+	public void setGrade(String grade) 
+	{
+		// A grade must be a valid value, otherwise default to "F".
 		String[] allowedGrades = {"A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"};
 		if(Arrays.asList(allowedGrades).contains(grade)) {
 			this.grade = grade;
@@ -64,7 +74,8 @@ public class Student {
 		}
 	}
 
-	public Long getId() {
+	public Long getId() 
+	{
 		return this.id;
 	}
 }
